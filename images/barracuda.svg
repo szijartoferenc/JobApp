@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48+devel r9772"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:label="Colorize"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4956">
+      <feColorMatrix
+         in="SourceGraphic"
+         values="1"
+         type="saturate"
+         result="result2"
+         id="feColorMatrix4958" />
+      <feFlood
+         flood-color="rgb(254,102,0)"
+         result="result1"
+         id="feFlood4960" />
+      <feBlend
+         mode="multiply"
+         in2="result2"
+         in="result1"
+         result="result3"
+         id="feBlend4962" />
+      <feComposite
+         result="result4"
+         in2="SourceGraphic"
+         k2="1"
+         operator="in"
+         id="feComposite4964" />
+    </filter>
+    <filter
+       inkscape:label="Quadritone fantasy"
+       inkscape:menu-tooltip="Replace hue by two colors"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4882">
+      <feColorMatrix
+         result="result2"
+         type="saturate"
+         values="1"
+         id="feColorMatrix4884" />
+      <feColorMatrix
+         result="result1"
+         values="50"
+         in="result2"
+         type="hueRotate"
+         id="feColorMatrix4886" />
+      <feColorMatrix
+         values="1 -1 1 0 0 0 1 0 0 0 1 -1 1 0 0 0 0 0 1 0 "
+         type="matrix"
+         id="feColorMatrix4888" />
+      <feColorMatrix
+         values="300"
+         type="hueRotate"
+         id="feColorMatrix4890" />
+    </filter>
+    <filter
+       inkscape:label="Invert hue"
+       inkscape:menu-tooltip="Invert hue, or rotate it"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4180">
+      <feColorMatrix
+         result="result1"
+         type="hueRotate"
+         values="180"
+         id="feColorMatrix4182" />
+    </filter>
+    <filter
+       inkscape:label="Invert hue"
+       inkscape:menu-tooltip="Invert hue, or rotate it"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4166">
+      <feColorMatrix
+         result="result1"
+         type="hueRotate"
+         values="180"
+         id="feColorMatrix4168" />
+    </filter>
+    <filter
+       inkscape:label="Duotone"
+       inkscape:menu-tooltip="Change colors to a duotone palette"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4132">
+      <feColorMatrix
+         result="result1"
+         type="saturate"
+         values="0"
+         id="feColorMatrix4134" />
+      <feFlood
+         flood-color="rgb(9,111,152)"
+         result="result2"
+         id="feFlood4136" />
+      <feBlend
+         mode="screen"
+         in2="result1"
+         result="result2"
+         id="feBlend4138" />
+      <feComposite
+         in="result2"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite4140" />
+    </filter>
+    <filter
+       inkscape:label="Duotone"
+       inkscape:menu-tooltip="Change colors to a duotone palette"
+       x="0"
+       y="0"
+       color-interpolation-filters="sRGB"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       id="filter4112">
+      <feColorMatrix
+         result="result1"
+         type="saturate"
+         values="0"
+         id="feColorMatrix4114" />
+      <feFlood
+         flood-color="rgb(9,111,152)"
+         result="result2"
+         id="feFlood4116" />
+      <feBlend
+         mode="screen"
+         in2="result1"
+         result="result2"
+         id="feBlend4118" />
+      <feComposite
+         in="result2"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite4120" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.87757673"
+     inkscape:cx="729.01236"
+     inkscape:cy="372.04724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="808"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <g
+       id="g4270">
+      <path
+         id="path4090"
+         sodipodi:nodetypes="ccccccc"
+         style="fill:#b3b3b3;stroke:#ececec;stroke-width:5.78772163000000006"
+         inkscape:connector-curvature="0"
+         d="m 1036.1984,696.12241 c 0.3837,-13.05479 -6.6575,-27.41492 -23.1275,-43.43261 -156.58928,-89.86203 -613.97001,-93.06132 -849.04055,-6.4033 -27.23839,-33.47927 -53.27516,-51.67877 -78.800596,-63.3878 -33.412946,3.49937 -85.25747356,143.05002 -64.196439,188.67654 39.940049,17.7859 90.447075,-4.3241 146.896555,-48.8669 247.47925,84.5514 785.82727,56.1787 868.26453,-26.58413 z" />
+      <g
+         transform="matrix(0.92085958,0,0,0.92085958,95.290554,53.840405)"
+         id="g3089">
+        <path
+           inkscape:connector-curvature="0"
+           id="path3074"
+           style="font-size:308.01187134px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           d="m 93.231787,553.75636 56.168783,0 -171.81041,253.11717 -56.168787,0 171.810414,-253.11717" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3076"
+           style="font-size:308.01187134px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           d="m 332.07424,574.48753 0,35.63832 c -10.22714,-10.59647 -21.15594,-18.51609 -32.78642,-23.75887 -11.53054,-5.24235 -23.81291,-7.86364 -36.84712,-7.86386 -25.66776,2.2e-4 -45.31954,8.75643 -58.9554,26.26863 -13.636,17.40105 -20.45396,42.60997 -20.45391,75.62686 -5e-5,32.90559 6.81791,58.11451 20.45391,75.62686 13.63586,17.4009 33.28764,26.10132 58.9554,26.1013 13.03421,2e-5 25.31658,-2.62125 36.84712,-7.86385 11.63048,-5.24254 22.55928,-13.16215 32.78642,-23.75888 l 0,35.3037 c -10.6282,8.03117 -21.90792,14.05455 -33.83919,18.07013 -11.83134,4.01558 -24.36436,6.02337 -37.59911,6.02337 -33.98968,0 -60.76022,-11.5448 -80.31169,-34.63442 -19.55156,-23.20111 -29.32732,-54.82382 -29.3273,-94.86821 -2e-5,-40.15569 9.77574,-71.7784 29.3273,-94.86821 19.55147,-23.20092 46.32201,-34.80149 80.31169,-34.80175 13.43528,2.6e-4 26.06856,2.00805 37.8999,6.02338 11.93127,3.90428 23.11073,9.81612 33.5384,17.7355" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3078"
+           style="font-size:308.01187134px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           d="m 375.83962,552.98742 30.53047,0 0,151.75567 c -6e-5,26.77064 4.36143,46.06775 13.08449,57.89136 8.72291,11.71216 22.86016,17.56821 42.41179,17.56819 19.45114,2e-5 33.53826,-5.85603 42.26139,-17.56819 8.72283,-11.82361 13.08432,-31.12072 13.08449,-57.89136 l 0,-151.75567 30.53048,0 0,155.93857 c -2e-4,32.57093 -7.26936,57.16637 -21.80748,73.78639 -14.43822,16.62006 -35.79449,24.93009 -64.06888,24.93009 -28.37488,0 -49.83141,-8.31003 -64.36967,-24.93009 -14.43809,-16.62002 -21.65711,-41.21546 -21.65708,-73.78639 l 0,-155.93857" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3080"
+           style="font-size:308.01187134px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           d="m 635.27342,583.18796 0,194.25396 36.69672,0 c 30.98154,3e-5 53.64124,-7.80805 67.97919,-23.42425 14.43787,-15.6161 21.65689,-40.2673 21.65708,-73.9537 -1.9e-4,-33.46306 -7.21921,-57.94695 -21.65708,-73.45176 -14.33795,-15.61595 -36.99765,-23.42403 -67.97919,-23.42425 l -36.69672,0 m -30.38008,-27.77446 62.41451,0 c 43.51457,2.5e-4 75.44871,10.09497 95.80252,30.28421 20.35344,20.07813 30.53026,51.53352 30.53048,94.36626 -2.2e-4,43.05609 -10.22717,74.67879 -30.68087,94.86821 -20.45408,20.18949 -52.33809,30.2842 -95.65213,30.2842 l -62.41451,0 0,-249.80288" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3082"
+           style="font-size:308.01187134px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           d="m 911.55163,588.70939 -41.20862,124.31585 82.56763,0 -41.35901,-124.31585 m -17.1452,-33.29589 34.44079,0 85.57558,249.80288 -31.58327,0 -20.45391,-64.08205 -101.21679,0 -20.45392,64.08205 -32.03444,0 85.72596,-249.80288" />
+      </g>
+    </g>
+  </g>
+</svg>

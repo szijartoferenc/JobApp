@@ -1,0 +1,623 @@
+:root {
+  --primaryColor: #1d1b7c;
+  --whiteColor: #ffffffe1;
+  --blackColor: #000000ef;
+  --greyColor: #f6f8fa;
+  --labelColor: #569cda;
+  --yellowColor: #ffd723;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+/*Menü*/
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 40px;
+  z-index: 10;
+  color: var(--whiteColor);
+  /* background: rgba(0, 0, 0, 0.542); */
+  background: transparent;
+  text-shadow: rgba(0, 0, 0, 1);
+  color: var(--blackColor);
+}
+
+.navbar-logo > a {
+  letter-spacing: 2.5;
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.navbar-menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-menu > a {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle .bar {
+  width: 15px;
+  height: 2px;
+  margin: 3px auto;
+  transition: all 0.3 ease-in-out;
+  background-color: var(--whiteColor);
+  cursor: pointer;
+}
+
+/* Header*/
+
+header {
+  /* height: 100%; */
+  /* width: 100%; */
+  background-image: url("images/man-g49a8b81db_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 200px;
+  padding-left: 48px;
+  padding-bottom: 200px;
+  /* top: 60px; */
+}
+
+.header-title {
+  /* position:relative;
+    top: 60px;
+    left: 48px; */
+
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-size: 52px;
+  color: var(--whiteColor);
+  text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header-title > span {
+  color: var(--primaryColor);
+}
+
+/* Search - keresés */
+
+.search-wrapper {
+  width: 60%;
+  margin: auto;
+  min-width: 300px;
+  height: 56px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.search-box {
+  width: 100%;
+  /* position: absolute; */
+  background-color: var(--greyColor);
+  box-shadow: rgba(2, 11, 20, 0.2) 0px 5px 15px;
+  /* top: -45%; */
+  height: 100%;
+  width: 100%;
+}
+
+.search-card {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 8px;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 8px;
+}
+
+.search-button {
+  width: 200px;
+  background: var(--primaryColor);
+  border: none;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+
+/* Szűrés -  */
+
+.filter-box {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  width: 60%;
+  min-width: 100px;
+  margin: auto;
+}
+
+.filter-dropdown {
+  width: 100%;
+  border-bottom: 1px solid var(--labelColor);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.filter-select {
+  border: none;
+  padding: 3px;
+}
+
+.filter-select:hover {
+  background: var(--greyColor);
+}
+
+.filter-chosen {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chosen-card{
+    background: var(--primaryColor);
+    padding: 3px 8px;
+    border-radius: 8px;
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+/* Álláslista -  */
+
+.job-list {
+  margin: 5%;
+  padding: 16px;
+  background-color: var(--greyColor);
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin: 16px;
+  min-height: 100px;
+  align-items: center;
+  background-color: var(--whiteColor);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px, 1px 4px;
+  cursor: pointer;
+}
+
+.job-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.job-name {
+  display: flex;
+}
+
+.job-profile {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+}
+
+.job-detail {
+  padding: 0px 10px;
+}
+
+.job-detail > h4 {
+  color: var(--primaryColor);
+  font-size: 14px;
+}
+
+.job-detail > p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.job-label {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-label > a {
+  padding: 2px;
+  margin: 3px;
+  color: var(--whiteColor);
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.label-a {
+  background-color: var(--yellowColor);
+}
+
+.label-b {
+  background-color: var(--primaryColor);
+}
+
+.label-c {
+  background-color: var(--blackColor);
+}
+
+.job-posted {
+  font-size: 12px;
+}
+
+.job-more {
+  display: block;
+  padding: 5px 32px;
+  margin: 20px auto;
+  width: 250px;
+  background-color: transparent;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.job-more:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+/* Csatlakozzon hozzánk */
+
+.join {
+  width: 100%;
+  height: 350px;
+  background-image: url(images/dc11e07f-35dd-4560-ac18-df2f66e062af.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--whiteColor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 48px;
+  align-items: center;
+  position: relative;
+}
+
+.join::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5634628851540616) 15%,
+    rgba(16, 173, 227, 0.6138830532212884) 73%
+  );
+  z-index: 1;
+}
+
+.join-detail {
+  min-width: 280px;
+  width: 50%;
+  z-index: 2;
+  margin-bottom: 16px;
+}
+
+.job-detail > h1 {
+  font-size: 36px;
+  letter-spacing: 2;
+}
+
+.join-button {
+  width: 200px;
+  padding: 16px;
+  border: none;
+  color: var(--blackColor);
+  background-color: var(--yellowColor);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background: transparent;
+  border: 2px solid var(--yellowColor);
+  color: var(--whiteColor);
+}
+
+/* További cégek */
+.featured {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 80px 16px;
+  background-color: var(--greyColor);
+}
+
+.featured-title {
+  margin-bottom: 8px;
+  letter-spacing: 1.5;
+  font-size: 36px;
+}
+
+.featured-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+}
+
+.featured-card:hover {
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.featured-image {
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.featured-button {
+  border: 1px solid var(--primaryColor);
+  background-color: transparent;
+  margin-top: 8px;
+  padding: 3px 10px;
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.featured-button:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+/* Róluk mondták*/
+.testimoni {
+  width: 100%;
+  text-align: center;
+  padding: 80px 16px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+/* Lapozó*/
+.swiper {
+  width: 80%;
+  height: 400px;
+  margin-top: 32px;
+}
+
+.swiper-slide {
+  background: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25) 0px 8px 16px -8px
+    rgba(0, 0, 0, 0.3);
+  color: var(--blackColor);
+}
+
+.swiper-slide i {
+  font-size: 40px;
+  color: var(--yellowColor);
+  margin-bottom: 16px;
+}
+
+.swiper-slide h3 {
+  font-family: "Noto Serif", serif;
+}
+
+.testimoni-pic {
+  padding: 16px;
+}
+
+.testimoni-pic img {
+  display: block;
+  margin: 16px auto;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Bejegyzések*/
+.blog {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 80px 16px;
+}
+
+.blog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.blog-card {
+  width: 300px;
+  height: auto;
+  margin: 16px;
+  box-shadow: 0 1px 6px 0 rgb(49 53 59 / 12%);
+  cursor: pointer;
+}
+
+.blog-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.blog-detail {
+  padding: 20px;
+}
+
+.blog-detail span {
+  color: var(--yellowColor);
+  font-size: 11px;
+}
+
+.blog-detail h4 {
+  padding: 10px 0;
+}
+
+.divider {
+  margin: 16px 0;
+  border: 0.5px solid var(--greyColor);
+}
+
+.blog-more {
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.blog-card:hover {
+  box-shadow: 0px 7px 29px 0 rgba(100, 100, 111, 0.2);
+}
+
+/* Lábléc*/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 48px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.featured-wrapper h3,
+.footer-wrapper h4 {
+  line-height: 3;
+  color: var(--yellowColor);
+}
+
+.featured-wrapper p {
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.social-media {
+  margin-top: 16px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: var(--greyColor);
+  margin-right: 10px;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: var(--greyColor);
+  line-height: 2;
+}
+
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* Mobilnézet*/
+@media screen and (max-width: 600px) {
+  .menu-toggle,
+  .bar {
+    display: block;
+    z-index: 3;
+  }
+
+  .menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .menu-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 657px;
+    text-align: center;
+    background-color: var(--blackColor);
+    display: none;
+    padding: 80px;
+  }
+
+  .navbar-menu:active {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    color: var(--whiteColor);
+    padding: 24px;
+  }
+
+  .header-title {
+    font-size: 38px;
+  }
+
+  .job-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .job-posted {
+    display: none;
+  }
+}

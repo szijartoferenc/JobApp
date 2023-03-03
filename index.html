@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Betűforma-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Icon-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+   <!--Swiper-->
+   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Responsive Állásportál</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">Állásportál</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Állások</a>
+            <a href="#companies">Munkaadók</a>
+            <a href="#testimoni">Vélemények</a>
+            <a href="#blog">Bejegyzés</a>
+            <a href="#">Bejelentkezés</a>
+        </div>
+
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+
+    <!--Header-->
+    <header>
+        <h1 class="header-title">
+            Találja meg <br> <span>tökéletes munkáját</span> <br>könnyen!
+        </h1>
+    </header>
+
+    <!--Keresés-->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="munkakör, kulcsszó">
+                <button class="search-button">Keresés</button>
+            </div>
+        </div>
+    </div>
+    <!--Szűrés-->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" id="job-level" name="job-level">
+                <option>Munkahelyi pozíció</option>
+                <option>Pályakezdő</option>
+                <option>Középvezető</option>
+                <option>Felsővezető</option>
+            </select>
+            <select class="filter-select" id="job-function" name="job-function">
+                <option>Munka/Feladat</option>
+                <option>IT</option>
+                <option>Vezetés</option>
+                <option>Oktatás</option>
+            </select>
+            <select class="filter-select" id="employment" name="employment">
+                <option>Foglalkoztatás típusa</option>
+                <option>Gyakornok</option>
+                <option>Részmunkaidő</option>
+                <option>Teljes mukaidő</option>
+            </select>
+            <select class="filter-select" id="location" name="location">
+                <option>Foglalkoztatás helye</option>
+                <option>Európa</option>
+                <option>Amerikai Egyesült Államok</option>
+                <option>Távmunka</option>
+            </select>
+            <select class="filter-select" id="education" name="education">
+                <option>Iskolai végzettség helye</option>
+                <option>Középiskola</option>
+                <option>BA fokozat</option>
+                <option>MA fokozat</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                <div class="chosen-card">
+                    Távmunka <i class="fas fat-times-circle"></i>
+                </div>
+            </div>
+            <div class="chosen-card">
+                <div class="chosen-card">
+                    Teljes munkaidő <i class="fas fat-times-circle"></i>
+                </div>
+            </div>
+            <div class="chosen-card">
+                <div class="chosen-card">
+                    Pénzügyi technológia <i class="fas fat-times-circle"></i>
+                </div>
+            </div>
+            <div class="chosen-card">
+                <div class="chosen-card">
+                    Pályakezdő <i class="fas fat-times-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Álláslista-->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/atene.svg">
+                <div class="job-detail">
+                    <h4>Atene Kft.</h4>
+                    <h3>Programtervező</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 2 perccel ezelőtt
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/1543749395.svg">
+                <div class="job-detail">
+                    <h4>Basotto Kft.</h4>
+                    <h3>Projektmenedzser</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 40 perccel ezelőtt
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/1546782441.svg">
+                <div class="job-detail">
+                    <h4>Lamotta Kft.</h4>
+                    <h3>Junior programtervező</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 5 órával ezelőtt
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/londra.svg">
+                <div class="job-detail">
+                    <h4>Londra Kft.</h4>
+                    <h3>Szoftverfejlesztő</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 1 nappal ezelőtt
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/otoral-pulsetrain.svg">
+                <div class="job-detail">
+                    <h4>PulseTrain Kft.</h4>
+                    <h3>Senior fejlesztő</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 3 nappal ezelőtt
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/1298571907.svg">
+                <div class="job-detail">
+                    <h4>BlueCherry Bt.</h4>
+                    <h3>Programtervező</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Pariatur.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Feltöltve 1 héttel ezelőtt
+            </div>
+        </div>
+        <button class="job-more">További állások</button>
+    </section>
+    <!--Csatlakozás-->
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">Kezdje velünk új munkáját</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt, consectetur facilis repudiandae quasi facere ducimus quas assumenda reiciendis tenetur repellat saepe dolorum perspiciatis! Placeat delectus maxime suscipit incidunt temporibus?
+            </p>
+        </div>
+        <button class="join-button">Csatlakozzon most</button>
+    </section>
+
+    <!--További cégek-->
+    <section class="featured" id="companies">
+        <h1 class="section-title">További cégek</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi reprehenderit non incidunt rerum nihil. Vitae natus laboriosam perspiciatis. Ducimus tenetur voluptatem voluptatum. Ipsum repellendus non adipisci, excepturi saepe obcaecati!
+        </p>
+
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img class="featured-image" src="images/anziano.svg">
+                <p>Anziano Kft.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/barracuda.svg">
+                <p>Barracuda Zrt.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+    
+            <div class="featured-card">
+                <img class="featured-image" src="images/fcrcglobelogo4.svg">
+                <p>FCRC Globe Zrt.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+    
+            <div class="featured-card">
+                <img class="featured-image" src="images/nhn.svg">
+                <p>NHN Bt.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+    
+            <div class="featured-card">
+                <img class="featured-image" src="images/oliva-bis.svg">
+                <p>Oliva Bis Kft.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+    
+            <div class="featured-card">
+                <img class="featured-image" src="images/parigi.svg">
+                <p>Parigi Kft.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/atene.svg">
+                <p>Atene Kft.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/407.svg">
+                <p>GNUPG Kft.</p>
+                <button class="featured-button">Nézze meg az állásokat</button>
+            </div>
+
+        </div>
+        
+    </section>
+    <!--Vélemények-->
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">Regisztrált ügyfelek véleménye</h1>
+        <p>Olvassa el ügyfeleink véleményét rólunk</p>
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tempore similique natus quisquam dolorum nam dolor impedit commodi aliquam?</h3>
+                <div class="testimoni-pic">
+                    <img src="images/profile01.jpg">
+                    <p>Minta Albert</p>
+                    <span>Pénzügy</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tempore similique natus quisquam dolorum nam dolor impedit commodi aliquam?</h3>
+                <div class="testimoni-pic">
+                    <img src="images/profile02.jpg">
+                    <p>Próba Jenő</p>
+                    <span>Fejlesztés</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tempore similique natus quisquam dolorum nam dolor impedit commodi aliquam?</h3>
+                <div class="testimoni-pic">
+                    <img src="images/profile03.jpg">
+                    <p>Atom Antal</p>
+                    <span>HR</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tempore similique natus quisquam dolorum nam dolor impedit commodi aliquam?</h3>
+                <div class="testimoni-pic">
+                    <img src="images/profile04.jpg">
+                    <p>Tank Aranka</p>
+                    <span>Adminisztráció</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tempore similique natus quisquam dolorum nam dolor impedit commodi aliquam?</h3>
+                <div class="testimoni-pic">
+                    <img src="images/profile05.jpg">
+                    <p>Gipsz Adél</p>
+                    <span>Számvitel</span>
+                </div>
+            </div>
+                      
+        </div>
+        <div class="swiper-pagination"></div>
+     </div>
+
+   </section>
+
+   <!--Bejegyzések-->
+   <section class="blog" id="blog">
+    <h1 class="section-title">Álláskeresési tanácsok</h1>
+    <p>Ismerje meg  a tanácsadóink által összeállított állákeresési techikákat </p>
+    <div class="blog-wrapper">
+        <div class="blog-card">
+            <img class="blog-image" src="images/blog01.jpg" alt="Image by yanalya on Freepik">
+            <div class="blog-detail">
+                <span>2022.04.10.</span>
+                <h4>Hogyan élvezd a munkád?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more">Olvasson tovább</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img class="blog-image" src="images/blog02.jpg" alt="Image by yanalya on Freepik">
+            <div class="blog-detail">
+                <span>2022.04.12.</span>
+                <h4>Interjú tippek</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more">Olvasson tovább</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img class="blog-image" src="images/blog03.jpg" alt="Image by yanalya on Freepik">
+            <div class="blog-detail">
+                <span>2022.04.14.</span>
+                <h4>Hatékony időbeosztás</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more">Olvasson tovább</a>
+            </div>
+        </div>
+      
+    </div>
+
+   </section>
+
+ <!--Lábléc-->
+ <footer>
+    <div class="footer-wrapper">
+        <h3>Állásportál</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <h4>Fedezze fel!</h4>
+        <a href="#">Kiemelt cégek</a>
+        <a href="#">Felhasználási feltételek</a>
+        <a href="#">Podcast</a>
+        <a href="#">Állásaink</a>
+    </div>
+    <div class="footer-wrapper">
+        <h4>Rólunk</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Motiváció</a>
+        <a href="#">Podcast</a>
+        <a href="#">Bejegyzések</a>
+    </div>
+    <div class="footer-wrapper">
+        <h4>Támogatás</h4>
+        <a href="#">Ügyfélszolgálat</a>
+        <a href="#">Adatvédelem</a>
+        <a href="#">Partnereink</a>
+    </div>
+    <div class="footer-wrapper">
+        <h4>Közösség</h4>
+        <a href="#">Közösségünk</a>
+        <a href="#">Hívja meg egy ismerősét</a>
+        <a href="#">Eseményeink</a>
+    </div>
+
+ </footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
+
